@@ -1,0 +1,19 @@
+{
+  "name": "trusty-snapshot",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@c2pa/adobe-sdk": "^0.16.2",
+    "@c2pa/adobe-wc": "^0.12.9",
+    "three": "^0.158.0"
+  }
+}

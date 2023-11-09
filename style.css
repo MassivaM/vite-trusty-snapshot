@@ -1,0 +1,254 @@
+
+body {
+  margin: 0;
+  background-color:white;
+  display:flex; 
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  
+}
+#canvas {
+
+    /* position: relative; */
+    /* z-index: 1; */
+    /* display: none; */
+
+  }
+
+  .title{
+    color:#282828;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+
+  }
+ .start-page{
+    background-color:white;
+    border: 2px solid #282828;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 1024px;
+    flex-direction: column;
+    height: 576px;
+    border-radius: 6px ;
+  }
+.btn{
+  width: 5rem;
+  height: 3rem;
+  border: 2px solid #282828;
+  background-color: white;
+  border-radius: 6px ;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.page{
+  display: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: none; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #282828;
+  font-size: 1rem;
+  width: 1024px;
+  border-radius: 6px ;
+  font-weight: 600;
+  height: 576px;
+
+}
+
+.btn1{
+  width: 5rem;
+  height: 3rem;
+  border: 2px solid #282828;
+  background-color: white;
+  border-radius: 6px ;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-top: 3rem;
+}
+
+p{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.img-next{
+  display: flex;
+
+}
+
+#img{
+  padding-left: 10rem;
+}
+#container {
+  position: relative;
+  height:576px;
+  width:1024px;
+  display: block;
+}
+#container canvas, #overlay {
+  position: absolute;
+  height:576px;
+   width:1024px;
+   z-index:9999;
+   background-color: rgba(40, 40, 40, 0.50);
+  
+
+}
+#container #renderer, #overlay {
+  position: absolute;
+  height:576px;
+   width:1024px;
+   z-index:10000;
+   background-color: rgba(40, 40, 40, 0.50);
+  
+
+}
+
+.small-overlay{
+height: 288px;
+width: 512px;
+border: 4px solid #282828;
+border-radius: 10px;
+background-color: white;
+align-items: center;
+
+display:flex;
+flex-direction: column;
+
+}
+
+.small-overlay p{
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.small-overlay input{
+  margin-right: 4rem;
+  margin-left: 4rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid #282828;
+  text-align: center; 
+
+}
+
+.small-overlay button{
+margin-top: 2rem;
+height: 2rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-bottom: 4px solid #85A0FA;
+}
+
+.username-div{
+  width: fit-content;
+  display: flex;
+  height: 30px;
+  background-color: white;
+  border: 4px solid #282828;
+  border-radius:10px;
+  align-items: center;
+
+}
+
+#cr-logo{
+  width: 20px;
+  height: 20px;
+  padding-left: 0.5rem;
+
+}
+
+.username{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:576px;
+  width:1024px;
+  
+}
+
+.right{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  display: none;
+}
+
+.bottom{
+  display: none;
+  height:495px;
+  width:1024px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.caption{
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#renderer{
+  display:none;
+}
+
+.threejs-overlay {
+  position: absolute;
+  display: none;
+  z-index: 100000;
+  left: 28%;
+  top: 88%;
+  }
+
+  #picture{
+    height: 194px;
+width: 306px;
+
+  }
+  .caption1{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .picture-underlay{
+    margin-top: 4rem;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 234px;
+    width: 346px;
+    background-color: white;
+    border: 4px solid #282828;
+    width: ;
+  }
