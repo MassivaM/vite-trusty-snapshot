@@ -1,0 +1,1 @@
+# vite-trusty-snapshot
