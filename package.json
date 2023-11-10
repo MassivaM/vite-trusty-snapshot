@@ -14,6 +14,8 @@
   "dependencies": {
     "@c2pa/adobe-sdk": "^0.16.2",
     "@c2pa/adobe-wc": "^0.12.9",
-    "three": "^0.158.0"
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
+    "three": "^0.158.0",
+    "vite-plugin-wasm": "^3.2.2"
   }
 }

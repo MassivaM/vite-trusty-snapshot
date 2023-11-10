@@ -1,57 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Snapshot adventurer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
-        }
-      }
-    </script>
-    
-  </head>
-  <body>
-    <script type="module" src="/main.js"></script>
-  <div id="start-page" class="start-page">
-    <h1 class="title">Trusty Snapshot</h1>
-    <button id="start-btn" class="btn">START</button>
-  </div>
-  <div id="page-1" class="page">
-    <p> You heard about this thing called CAI and want to use it , let us walk you through it!</p>
-    <button id="page1-btn" class="btn1">Next</button>
-  </div>
-  <div id="page-2" class="page">
-    <p>Content Credentials are already integrated into the tools creators use every day for their work such as Adobe Stock, Behance, Photoshop, Lightroom and others</p> <br>     <p> Including Content Credentials gives viewers pertinent info about your images, so they are confident in what they're seeing</p>
-    <button id="page2-btn" class="btn1">Next</button>
-  </div>
-  <div id="page-3" class="page">
-    <p>See how easy it is to be transparent about your content and build trust with your audience! </p> <br>     <p> To play the game, use the arrow keys to help Creddy add Content Credentials to their creation.</p>
-   <div class="img-next"> <button id="page3-btn" class="btn1">Next</button> <img id="img"></img></div>
-  </div>
-  <div id="container"><canvas  id="canvas" height="576" width="1024"></canvas>  
-    <div id="overlay">
-      <div class="right" id="right">
-        <div class="username-div"><img id="cr-logo"></img><span id="username" class="username"></span></div>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Snapshot adventurer</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+      <script type="importmap">
+         {
+           "imports": {
+             "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+             "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+           }
+         }
+      </script>
+   </head>
+   <body>
+      <script type="module" src="/main.js"></script>
+      <div id="start-page" class="start-page">
+        <img id="creddy">
+         <h1 class="title2">Trusty Snapshot</h1>
+          <button id="start-btn" class="btn">START</button>
       </div>
-         <div class="bottom" id="bottom"><div class="caption1"><div class="picture-underlay" id="picture-underlay"><img id="picture"></div></img> <div id="caption1" class="username-div caption">Let's start off by taking a picture , find the smartphone and snap a pic!</div></div></div>
-
-      <div class="center">
-    <div class="small-overlay" id="small-overlay">    <p style="padding-top:2rem">Including your name in your content credentials helps people <span style="font-weight: 800;">trust your content more.</span>
-    </p><p> It also can help make sure you get credit for your work!</p>
-    <input placeholder="What's your name?" id='nameField' type='text'></input>
-  <button class="btn1" id="cr-btn">Let's go!</button></div>
-
-</div>
-  </div>
-  <div class="threejs-overlay" id="3js-overlay"><div id="caption2" class="username-div caption">"Look around and when you're ready  , press space to take a picture!"</div></div>
-  
-  </div>
-  
-  </body>
+      <div id="page-1" class="page">
+         <p> You heard about this thing called CAI and want to use it , let us walk you through it!</p>
+         <button id="page1-btn" class="btn1">Next</button>
+      </div>
+      <div id="page-2" class="page">
+         <p>Content Credentials are already integrated into the tools creators use every day for their work such as Adobe Stock, Behance, Photoshop, Lightroom and others</p>
+         <br>     
+         <p> Including Content Credentials gives viewers pertinent info about your images, so they are confident in what they're seeing</p>
+         <button id="page2-btn" class="btn1">Next</button>
+      </div>
+      <div id="page-3" class="page">
+         <p>See how easy it is to be transparent about your content and build trust with your audience! </p>
+         <br>     
+         <p> To play the game, use the arrow keys to help Creddy add Content Credentials to their creation.</p>
+         <div class="img-next"> <button id="page3-btn" class="btn1">Next</button> <img id="img"></div>
+      </div>
+      <div id="container">
+         <canvas  id="canvas" height="576" width="1024"></canvas>
+         <div id="overlay">
+            <div class="right" id="right">
+               <div class="username-div2" id="username-div2">
+                  <span id="title">Content Credentials</span>
+                  <span id="subtitle">in progress</span>
+                  <img id="final-pic"></img>
+                  <span class="username-prod">
+                  <span class="title">Producer</span>
+                  <span id="username" class="username"></span>
+                  </span>
+                  </span></span>
+                  <span id="ai" class="ai">
+                    <span class="title">AI model used</span>
+                    <span  class="username">CAfly</span>
+                  </span>
+                  <span id="insta" class="insta">   <span class="title">Social Media</span>
+                  <a id="link" class="username"></a></span>
+                  <span id="edit" class="edit"> <span class="title">Edit and Actvities</span>
+                  <span  class="username">Color changes</span></span>
+                  <button id="view" class="btn3">View on Verify</button>
+                
+               </div>
+            </div>
+            <div class="bottom" id="bottom">
+               <div class="caption1">
+                  <div class="picture-underlay" id="picture-underlay"><canvas id="picture"></canvas></div>
+                  <div class="insta-underlay" id="insta-underlay">  <input placeholder="Your social media URL"  id="instaField" type='text'></input>
+                    <button class="btn2" id="insta-btn" >Let's go!</button></div>
+                  </img> 
+                  <div id="caption1" class="username-div caption">Let's start off by taking a picture , find the smartphone and snap a pic!</div>
+               </div>
+            </div>
+            <div class="center">
+               <div class="small-overlay" id="small-overlay">
+                  <p style="padding-top:2rem">Including your name in your content credentials helps people <span style="font-weight: 800;">trust your content more.</span>
+                  </p>
+                  <p> It also can help make sure you get credit for your work!</p>
+                  <input placeholder="What's your name?" id='nameField' type='text'></input>
+                  <button class="btn1" id="cr-btn">Let's go!</button>
+               </div>
+            </div>
+         </div>
+         <div class="threejs-overlay" id="3js-overlay">
+          <img id="CAIphone">
+            <div id="caption2" class="username-div caption">Look around and when you're ready  , press space to take a picture!</div>
+         </div>
+      </div>
+   </body>
 </html>
